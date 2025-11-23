@@ -1,13 +1,19 @@
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Geneva, Geneva;
   background: linear-gradient(to bottom, #ece9e6, #ffffff);
   margin: 0;
   padding: 40px;
 }
 
 h1 {
-  color: #2c3e50;
-  font-family: Georgia, serif;
+  color: #a1000f;
+  font-family: Rockwell, serif;
+  text-align: center;
+}
+
+h3 {
+  color: #7f0bc6;
+  font-family: Bookman, serif;
   text-align: center;
 }
 
