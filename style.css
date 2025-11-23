@@ -1,0 +1,18 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(to bottom, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+ul {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-left: 5px solid #e74c3c;
+}
