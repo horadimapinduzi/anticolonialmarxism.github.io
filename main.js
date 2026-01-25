@@ -27,18 +27,56 @@ window.onload = function() {
   document.getElementById("Vegan Diet").style.display = "none";
 };
 
-window.addEventListener('load', function(){
-	document.getElementById('sampleeditor').setAttribute('contenteditable', 'true');
-	document.getElementById('sampleeditor2').setAttribute('contenteditable', 'true');
-});
-
-function format(command, value) {
-	document.execCommand(command, false, value);
+function editoroption1() {
+  document.getElementById("textarea1")
+  .style.fontWeight = "bold";
 }
 
-function setUrl() {
-	var url = document.getElementById('txtFormatUrl').value;
-	var sText = document.getSelection();
-	document.execCommand('insertHTML', false, '<a href="' + url + '" target="_blank">' + sText + '</a>');
-	document.getElementById('txtFormatUrl').value = '';
+function editoroption2() {
+  document.getElementById("textarea1")
+  .style.fontStyle = "italic";
 }
+
+function editoroptionr3() {
+  document.getElementById("textarea1")
+  .style.textAlign = "left";
+}
+
+function editoroption4() {
+  document.getElementById("textarea1")
+  .style.textAlign = "center";
+}
+
+function editoroption5() {
+  document.getElementById("textarea1")
+  .style.textAlign = "right";
+}
+
+function editoroption6() {
+  document.getElementById("textarea1")
+  .style.textTransform = "uppercase";
+}
+
+function editoroption7() {
+  document.getElementById("textarea1")
+  .style.textTransform = "lowercase";
+}
+
+function editoroption8() {
+  document.getElementById("textarea1")
+  .style.textTransform = "capitalize";
+}
+
+function editoroption9() {
+  document.getElementById("textarea1")
+  .style.fontWeight = "normal";
+  document.getElementById("textarea1")
+  .style.textAlign = "left";
+  document.getElementById("textarea1")
+  .style.fontStyle = "normal";
+  document.getElementById("textarea1")
+  .style.textTransform = "capitalize";
+  document.getElementById("textarea1")
+  .value = "";
+}
+
