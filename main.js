@@ -27,6 +27,17 @@ window.onload = function() {
   document.getElementById("Vegan Diet").style.display = "none";
 };
 
+function download(file, text) {
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8, ' + encodeURIComponent(document.getElementById("textarea1").value));
+  element.setAttribute('download', file);
+  document.body.appendChild(element);
+  element.click();
+}
+
+var file = document.getElementById("myFile").files[0];
+var reader = new FileReader();
+
 function editoroption1() {
   document.getElementById("textarea1")
   .style.fontWeight = "bold";
@@ -80,3 +91,21 @@ function editoroption9() {
   .value = "";
 }
 
+function editoroption10() {
+  let text = document.getElementById("textarea1").value;
+  let filename = "text.txt";
+  download(filename, text);
+}
+
+function editoroption11() {
+  const fileInput = document.getElementById("myFile");
+  fileInput.addEventListener('change', function() {
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var textArea = document.getElementById("textarea1");
+      textArea.value = e.target.result;
+    };
+    reader.readAsText(file);
+  });
+}
