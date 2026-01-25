@@ -37,7 +37,7 @@ function editoroption2() {
   .style.fontStyle = "italic";
 }
 
-function editoroptionr3() {
+function editoroption3() {
   document.getElementById("textarea1")
   .style.textAlign = "left";
 }
