@@ -4,9 +4,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script src="main.js"></script>
     <div class="tab">
       <button class="tablinks" onclick="openTab(event, 'Christmas List')"> Christmas List </button>
       <button class="tablinks" onclick="openTab(event, 'Vegan Diet')"> Vegan Diet </button>
+      <button class="tablinks" onclick="openTab(event, 'Text Editor')"> Text Editor </button>
     </div>
     <!--> <div id="Christmas List" class="tabcontent">
       <h1>This is my 2025 Christmas List!</h1>
@@ -76,7 +78,15 @@
             <li><a href="https://www.amazon.com/Delicious-Coconut-Cookie-Frozen-Dessert/dp/B01EWRHXMO/"> So Delicious Vegan Ice Cream Pint </a></li>
             <li><a href="https://www.amazon.com/Taylor-Farms-65107-Spinach-Bag/dp/B00KMM8I6Y/"> Taylor Farms Spinach </a></li>
           </ol>
-          <script src="main.js"></script>
+      </div>
+    </div>
+    <div id="Text Editor" class="tabcontent" contenteditable="true">
+      <div class="toolbar">
+        <a href="javascript:void(0)" onclick="format('bold')"><span class="fa fa-bold fa-fw"></span></a>
+        <a href="javascript:void(0)" onclick="format('italic')"><span class="fa fa-italic fa-fw"></span></a>
+        <a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
+        <a href="javascript:void(0)" onclick="setUrl()"><span class="fa fa-link fa-fw"></span></a>
+        <span><input id="txtFormatUrl" placeholder="url" class="form-control"></span>
       </div>
     </div>
   </body>
